@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Run for Cataract 2026 | Bergerak Bersama Menerangi Masa Depan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#004B87',
+                        brandGreen: '#A6CE39',
+                        brandDark: '#1E293B',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="assets/logo-charity.png" alt="Charity Run for Cataract 2026 Logo" class="h-12 w-auto object-contain">
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#tentang" class="hover:text-brandBlue transition">Tentang Acara</a>
+                <a href="#kategori" class="hover:text-brandBlue transition">Kategori & Tiket</a>
+                <a href="#hadiah" class="hover:text-brandBlue transition">Total Hadiah</a>
+                <a href="#jadwal" class="hover:text-brandBlue transition">Jadwal & Rute</a>
+                <a href="#kontak" class="hover:text-brandBlue transition">Kontak</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://reg5k.charityfor.net" target="_blank" class="bg-brandBlue hover:bg-blue-800 text-white font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition text-sm">
+                    Daftar 5K Run
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-4 space-y-3">
+            <a href="#tentang" class="block text-slate-600 hover:text-brandBlue py-2 font-medium">Tentang Acara</a>
+            <a href="#kategori" class="block text-slate-600 hover:text-brandBlue py-2 font-medium">Kategori & Tiket</a>
+            <a href="#hadiah" class="block text-slate-600 hover:text-brandBlue py-2 font-medium">Total Hadiah</a>
+            <a href="#jadwal" class="block text-slate-600 hover:text-brandBlue py-2 font-medium">Jadwal & Rute</a>
+            <a href="#kontak" class="block text-slate-600 hover:text-brandBlue py-2 font-medium">Kontak</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://reg5k.charityfor.net" target="_blank" class="text-center bg-brandBlue text-white font-semibold py-2.5 rounded-full text-sm">Daftar 5K Run</a>
+                <a href="https://reg2k.charityfor.net" target="_blank" class="text-center bg-brandGreen text-slate-900 font-semibold py-2.5 rounded-full text-sm">Daftar 2K Fun Walk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION 1: TEXT & CTA UTAMA -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-brandBlue to-slate-900 text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#A6CE39_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-2 bg-brandGreen/20 text-brandGreen border border-brandGreen/30 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-6">
+                <i class="fa-solid fa-heart-pulse"></i> Charity Run for Cataract 2026
+            </span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Berlari untuk Membantu, <span class="text-brandGreen">Memulihkan Penglihatan</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto mb-8 font-light">
+                Setiap langkah untuk penglihatan, setiap lari untuk harapan. Mari bergabung dalam aksi nyata membantu penderita katarak prasejahtera.
+            </p>
+            
+            <!-- Event Meta Info -->
+            <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-base mb-10 text-slate-300">
+                <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    <i class="fa-solid fa-calendar-days text-brandGreen"></i> Sabtu, 14 November 2026
+                </div>
+                <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    <i class="fa-solid fa-location-dot text-brandGreen"></i> Plaza Barat GBK, Jakarta
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://reg5k.charityfor.net" target="_blank" class="bg-brandGreen hover:bg-lime-500 text-slate-900 font-bold px-8 py-4 rounded-full shadow-lg transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-person-running"></i> Daftar 5K Run
+                </a>
+                <a href="https://reg2k.charityfor.net" target="_blank" class="bg-white hover:bg-slate-100 text-brandBlue font-bold px-8 py-4 rounded-full shadow-lg transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-people-group"></i> Daftar 2K Fun Walk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION 2: FULL WIDTH IMAGE (hero.jpg tanpa teks tambahan) -->
+    <section class="w-full bg-slate-950 overflow-hidden leading-none">
+        <img src="assets/hero.jpg" alt="Charity Run for Cataract 2026" class="w-full h-auto object-cover block">
+    </section>
+
+    <!-- SECTION: TENTANG ACARA -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brandBlue tracking-widest uppercase mb-3">Tentang Misi Kami</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900">Mengapa Event Ini Penting?</h3>
+                <p class="text-slate-600 mt-4">Charity Run for Cataract 2026 tidak hanya sekadar ajang olahraga, melainkan gerakan kemanusiaan untuk mengembalikan penglihatan dan kualitas hidup sesama.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-brandBlue rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Menghadirkan Harapan</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mendukung program operasi katarak bagi masyarakat prasejahtera agar dapat melihat dan menjalani hidup dengan lebih baik.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Kepedulian Bersama</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mengajak peserta, komunitas, dan donatur untuk menjadi bagian dari aksi nyata yang membawa dampak positif bagi sesama.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-brandBlue rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Kolaborasi Kemanusiaan</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Mempertemukan komunitas olahraga, gereja, dan masyarakat luas dalam semangat gotong royong untuk tujuan mulia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: KATEGORI & TIKET -->
+    <section id="kategori" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brandBlue tracking-widest uppercase mb-3">Pilihan Kategori</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900">Pilih Kategori Lomba Anda</h3>
+                <p class="text-slate-600 mt-4">Tersedia kategori kompetitif 5K dan kategori rekreasi/keluarga 2K Fun Walk.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Kategori 1: 5K Run -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brandBlue text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl">COMPETITIVE</div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">5K Run (Men & Women)</h4>
+                        <p class="text-slate-500 text-sm mb-6">Lari 5 kilometer menggunakan timing system dengan Cut-Off Time (COT) 90 menit.</p>
+                        <div class="text-3xl font-extrabold text-brandBlue mb-6">Rp 200.000 <span class="text-sm font-normal text-slate-500">/ orang</span></div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Race Jersey</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> BIB Number + Timing Chip</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Finisher Medal</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Race Pack & Refreshment</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Kesempatan Hadiah Juara & Door Prize</li>
+                        </ul>
+                    </div>
+                    <a href="https://reg5k.charityfor.net" target="_blank" class="w-full bg-brandBlue hover:bg-blue-800 text-white font-semibold py-3 rounded-full text-center transition shadow-md">
+                        Daftar 5K Run
+                    </a>
+                </div>
+
+                <!-- Kategori 2: Family & Community Fun Walk -->
+                <div class="bg-white rounded-3xl p-8 shadow-md border-2 border-brandGreen flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brandGreen text-slate-900 text-xs font-extrabold px-4 py-1.5 rounded-bl-2xl">POPULER KELUARGA</div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">2K Family & Community Fun Walk</h4>
+                        <p class="text-slate-500 text-sm mb-6">Jalan santai beregu (10-20 orang/tim) dimeriahkan Line Dance & Best Dress Competition.</p>
+                        <div class="text-3xl font-extrabold text-brandBlue mb-6">Rp 50.000 <span class="text-sm font-normal text-slate-500">/ orang</span></div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Min. 10 - Maks. 20 Orang/Tim</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> BIB Number (tanpa timing chip)</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Finisher Medal & Refreshment</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Line Dance & Best Dress Competition</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Kesempatan Door Prize / Lucky Draw</li>
+                        </ul>
+                    </div>
+                    <a href="https://reg2k.charityfor.net" target="_blank" class="w-full bg-brandGreen hover:bg-lime-500 text-slate-900 font-bold py-3 rounded-full text-center transition shadow-md">
+                        Daftar 2K Fun Walk
+                    </a>
+                </div>
+
+                <!-- Kategori 3: Individual Fun Walk -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-slate-800 text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl">COMPETITIVE</div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">2K Individual Fun Walk</h4>
+                        <p class="text-slate-500 text-sm mb-6">Jalan santai atau berlari perorangan secara rekreatif tanpa harus membentuk regu.</p>
+                        <div class="text-3xl font-extrabold text-brandBlue mb-6">Rp 200.000 <span class="text-sm font-normal text-slate-500">/ orang</span></div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Race Jersey</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> BIB Number (tanpa timing chip)</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Finisher Medal</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Race Pack & Refreshment</li>
+                            <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Kesempatan Door Prize / Lucky Draw</li>
+                        </ul>
+                    </div>
+                    <a href="https://reg2k.charityfor.net" target="_blank" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-semibold py-3 rounded-full text-center transition shadow-md">
+                        Daftar 2K Fun Walk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: TOTAL HADIAH -->
+    <section id="hadiah" class="py-16 bg-brandBlue text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#A6CE39_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="text-brandGreen font-bold tracking-widest uppercase text-xs sm:text-sm block mb-2">REWARD & APPRECIATION</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Total Hadiah Perlombaan</h2>
+            <div class="text-4xl sm:text-6xl font-black text-brandGreen tracking-tight mb-4">Rp 35.000.000,-</div>
+            <p class="text-slate-200 max-w-xl mx-auto text-sm sm:text-base">Dapatkan hadiah uang tunai untuk kategori 5K Men/Women serta berbagai penghargaan menarik untuk Line Dance & Best Dress Competition!</p>
+        </div>
+    </section>
+
+    <!-- SECTION: JADWAL & LOKASI -->
+    <section id="jadwal" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold text-brandBlue tracking-widest uppercase mb-3">Waktu & Tempat</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mb-6">Catat Tanggal dan Lokasi Acara</h3>
+                    <p class="text-slate-600 mb-8">Pastikan Anda hadir tepat waktu di lokasi start-finish untuk menikmati seluruh rangkaian acara mulai dari pemanasan bersama hingga pengundian doorprize.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="text-brandBlue text-xl mt-1"><i class="fa-solid fa-calendar-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Hari / Tanggal</h4>
+                                <p class="text-slate-600 text-sm">Sabtu, 14 November 2026</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="text-brandBlue text-xl mt-1"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Lokasi Start & Finish</h4>
+                                <p class="text-slate-600 text-sm">Plaza Barat, Gelora Bung Karno (GBK), Jakarta</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="text-brandBlue text-xl mt-1"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Waktu Utama</h4>
+                                <p class="text-slate-600 text-sm">04.30 WIB (Persiapan) s.d. 08.40 WIB (Penutupan)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Background Biru Tua (brandBlue) -->
+                <div class="bg-brandBlue rounded-3xl p-8 text-white relative overflow-hidden shadow-xl border border-blue-800">
+                    <h3 class="text-2xl font-bold mb-6">Ringkasan Susunan Acara</h3>
+                    <ul class="space-y-4 text-sm relative z-10">
+                        <li class="flex justify-between border-b border-blue-700/50 pb-3">
+                            <span>04.30 - 05.00 WIB</span>
+                            <span class="font-semibold">Kedatangan & Persiapan Peserta</span>
+                        </li>
+                        <li class="flex justify-between border-b border-blue-700/50 pb-3">
+                            <span>05.20 - 05.30 WIB</span>
+                            <span class="font-semibold">Pemanasan Bersama</span>
+                        </li>
+                        <li class="flex justify-between border-b border-blue-700/50 pb-3">
+                            <span>05.30 WIB</span>
+                            <span class="font-semibold">Start Competitive 5K Run</span>
+                        </li>
+                        <li class="flex justify-between border-b border-blue-700/50 pb-3">
+                            <span>05.40 WIB</span>
+                            <span class="font-semibold">Start Fun Walk 2K (Family & Individual)</span>
+                        </li>
+                        <li class="flex justify-between border-b border-blue-700/50 pb-3">
+                            <span>07.15 - 08.20 WIB</span>
+                            <span class="font-semibold">Pengumuman Juara & Lucky Draw</span>
+                        </li>
+                        <li class="flex justify-between pb-1">
+                            <span>08.30 WIB</span>
+                            <span class="font-semibold">Grand Lucky Draw & Penutupan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div class="flex flex-col items-start gap-4">
+                    <!-- Logo Footer -->
+                    <img src="assets/logo-charity.png" alt="Logo" class="h-12 w-auto object-contain">
+                    <p class="text-sm text-slate-400">Hubungi Panitia Pelaksana untuk informasi lebih lanjut:</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://wa.me/62818127859" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-brandGreen text-base"></i> Tino: 0818127859
+                        </a>
+                        <a href="https://wa.me/6281317709970" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-brandGreen text-base"></i> Fredrik: 081317709970
+                        </a>
+                        <a href="https://wa.me/6281393339727" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-brandGreen text-base"></i> Nando: 081393339727
+                        </a>
+                    </div>
+                </div>
+                <div class="flex md:justify-end gap-6 text-xl">
+                    <a href="https://instagram.com/pegforcare" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@pegforcare" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://youtube.com/@pegforcare" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Charity Run for Cataract. All rights reserved.</p>
+                <p class="mt-2 sm:mt-0 font-semibold text-slate-300">Organized by Departemen PEG & YAPENDIK</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
